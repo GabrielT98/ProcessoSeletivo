@@ -10,6 +10,10 @@ class Competicao():
         self.__nome = nome
         self.__local = local
         self.__data = data
+        self.__status = "andamento"
+
+    def mudar_status(self):
+        self.__status = "Finalizada"
 
     def get_id(self):
         return self.__id
@@ -20,3 +24,5 @@ class Competicao():
         return self.__local
     def get_data(self):
         return self.__data
+    def get_status(self):
+        return self.__status
